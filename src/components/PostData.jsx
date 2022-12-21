@@ -28,8 +28,8 @@ const PostData = () => {
             for (var key of data.entries()) {
                 console.log(key[0] + ', ' + key[1])
             }
-            let url = process.env.REACT_APP_URL1+'/PostData';
-            axios.post(url,data).then(res =>{
+            
+            axios.post('https://insta-backened.onrender.com/PostData',data).then(res =>{
                 console.log(res)
                 navigate('/PostView')
             } ).catch(err => console.log(err))

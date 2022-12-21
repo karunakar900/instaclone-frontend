@@ -12,8 +12,8 @@ const PostView = () => {
 
     useEffect( () => {
         function getData() {
-            let url = process.env.REACT_APP_URL1+'/PostView';
-            axios.get(url)
+           
+            axios.get('https://insta-backened.onrender.com/PostView')
           
             .then(ress =>{
                 console.log(ress)
